@@ -15,7 +15,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Navbar />  
-        {children}
+
+        <main style={{ flex: '1 0 auto' }}>
+          {children}
+        </main>
+
         <Footer />
         </body>
     </html>
